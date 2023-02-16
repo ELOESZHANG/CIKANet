@@ -1,8 +1,11 @@
 # CIKANet
 These are the code for "Cross-Interaction Kernel Attention Network For Pansharpening"
+## Quick Start
+run `python fuse.py` to use pretrained model for pansharpening
+run `python imgshow.py` to visualize the fused images
+## How To Train?
 **Step1. Put datasets and set path**
 * Put datasets (WorldView3, QuickBird, WorldView2) into the `/data`, see following path structure. 
-
 ```
 |-$ROOT/data
 ├── WV3
@@ -44,3 +47,6 @@ These are the code for "Cross-Interaction Kernel Attention Network For Pansharpe
 │   │   │   ├── PAN
 │   │   │   │   ├── 1.TIF
 │   │   │   ├── ...
+
+**Step2. train**
+run `python train.py` for training
