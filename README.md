@@ -5,7 +5,7 @@ run `python fuse.py` to use pretrained model for pansharpening
 
 run `python imgshow.py` to visualize the fused images
 ## How To Train?
-**Step1. Put datasets and set path**
+**Step1. Put datasets**
 * Put datasets (WorldView3, QuickBird, WorldView2) into the `/data`, see following path structure. 
 ```
 |-$ROOT/data
