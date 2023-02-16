@@ -10,21 +10,20 @@ warnings.filterwarnings("ignore")
 
 device_id = 0
 os.environ["CUDA_VISIBLE_DEVICES"] = str(device_id)
-satellite = 'qb'
-ch = 0
+satellite = 'wv3'
 max_value = 2047.
 if satellite == 'wv3':
+    global ch
     ch = 8
 elif satellite == 'qb':
     ch = 4
 elif satellite == 'wv2':
     ch = 8
 method = 'cikanet'
-FR_test_dir = f'D:/dataset/{satellite.upper()}/test/Full Resolution/'
+FR_test_dir = f'./{satellite.upper()}/test/Full Resolution/'
 FR_save_dir = f"./{satellite}/FR/"
-RR_test_dir = f'D:/dataset/{satellite.upper()}/test/Reduced Resolution/'
+RR_test_dir = f'./{satellite.upper()}/test/Reduced Resolution/'
 RR_save_dir = f"./{satellite}/RR/"
-
 
 
 if not os.path.exists(FR_save_dir):
@@ -32,7 +31,7 @@ if not os.path.exists(FR_save_dir):
 if not os.path.exists(RR_save_dir):
     os.makedirs(RR_save_dir)
 
-
+    
 def load_image(img_path):
     dataset = gdal.Open(img_path)
     img = dataset.ReadAsArray()
