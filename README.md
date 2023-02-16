@@ -1,6 +1,6 @@
 # CIKANet
 This project is the code for "Cross-Interaction Kernel Attention Network For Pansharpening"
-## Quick Start
+## Test and Visualize
 run `python fuse.py` to use pretrained model for pansharpening
 
 run `python imgshow.py` to visualize the fused images
