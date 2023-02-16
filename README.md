@@ -48,6 +48,6 @@ run `python imgshow.py` to visualize the fused images
 │   │   │   ├── PAN
 │   │   │   │   ├── 1.TIF
 │   │   │   ├── ...
-
+```
 **Step2. train**
 run `python train.py` for training
