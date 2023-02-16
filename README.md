@@ -53,4 +53,5 @@ All the MS and GT images are with the shape of (C, H/r, W/r).
 All the PAN images are with the shape of (H, W).
 
 **Step2. train**
+
 run `python train.py` for training
